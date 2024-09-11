@@ -17,8 +17,7 @@ fn main() {
     io::stdin()
         .read_line(&mut n)
         .expect("Digite um número válido...");
-    let n: i64 = n.trim().parse()
-        .expect("Por favor, digite um número...");
+    let n: i64 = n.trim().parse().expect("Por favor, digite um número...");
 
     let resultado = fib(n);
     println!("O termo {} da sequência de Fibonacci é: {}\n", n, resultado);
